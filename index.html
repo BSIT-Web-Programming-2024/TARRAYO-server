@@ -1,56 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Page</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="row col-md-6 col-md-offset-3 form-container">
-        <div class="panel panel-primary">
-          <div class="panel-heading text-center">
-            <h1>Registration Form</h1>
-          </div>
-          <div class="panel-body">
-            <form action="connect.php" method="post">
-              <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="firstName"
-                  name="firstName"
-                />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="lastName"
-                  name="lastName"
-                />
-             
-              </div>
-              <div class="form-group">
-                <label for="number">Phone Number</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="number"
-                  name="number"
-                />
-              </div>
-              <div class="center-btn">
-                <input type="submit" class="btn btn-primary" />
-              </div>
-
-            </form>
-          </div>
+        <div class="row col-md-6 col-md-offset-3 form-container">
+            <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                    <h1>Registration Form</h1>
+                </div>
+                <div class="panel-body">
+                    <form id="registrationForm" action="connect.php" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control" id="number" name="number" placeholder="Phone Number" required />
+                        </div>
+                        <div class="center-btn">
+                            <input type="submit" class="btn btn-primary" value="Register" />
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-</div>
-  </body>
+
+  
+    <script src="script.js"></script>
+</body>
 </html>
