@@ -1,39 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row col-md-6 col-md-offset-3 form-container">
-            <div class="panel panel-primary">
-                <div class="panel-heading text-center">
-                    <h1>Registration Form</h1>
-                </div>
-                <div class="panel-body">
-                    <form id="registrationForm" action="connect.php" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required />
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control" id="number" name="number" placeholder="Phone Number" required />
-                        </div>
-                        <div class="center-btn">
-                            <input type="submit" class="btn btn-primary" value="Register" />
-                        </div>
-                    </form>
-                </div>
+
+    <header class="header">
+        <a href="#home" class="logo">Tar<span>rayo</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>Tarrayo</span></h1>
+            <h3>I'm a <span>Frontend Developer</span></h3>
+            <p>I specialize in creating interactive and visually appealing websites using modern front-end technologies.
+                With a strong focus on clean, responsive design, I aim to provide seamless user experiences across all devices.
+                I bring designs to life through HTML, CSS, JavaScript, and animation, making websites both functional and engaging.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-discord"></i></a>
+                <a href="https://www.instagram.com/yana_yx.nx?igsh=MWsyOXRyY3ExN3dqbQ==" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.facebook.com/danielanicole.tarrayo.3?mibextid=ZbWKwL" target="_blank"><i class="bx bxl-facebook"></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire Me</a>
+                <a href="#contact" class="btn">Contact</a>
             </div>
         </div>
-    </div>
 
-  
+        <div class="home-img">
+            <img src="yana.jpg" alt="Tarrayo profile picture">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="dan.jpg" alt="Tarrayo about image">
+        </div>
+
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I'm a passionate front-end developer who loves building visually engaging websites and user interfaces.
+                I have experience with the latest front-end technologies and frameworks such as React, Vue.js, and SASS.
+                I thrive on turning complex designs into responsive, pixel-perfect web pages that are optimized for all screen sizes.
+                I focus on performance and maintainability to ensure a smooth and delightful user experience.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+
+        <div class="services-container">
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Mobile App Development</h4>
+                    <p>I create mobile apps that provide seamless and interactive experiences for users. From native apps to progressive web apps (PWA), I ensure your app is fast, responsive, and works across all devices.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p>With expertise in HTML, CSS, and JavaScript, I build modern and responsive websites. I integrate frameworks like React.js and Vue.js to deliver dynamic and user-friendly interfaces that adapt perfectly to any screen size.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>I offer back-end development services that ensure your website or application runs smoothly. With skills in Node.js, Express, and databases like MongoDB, I handle server-side logic, databases, and APIs to ensure functionality and performance.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="submit_contact.php"  method="post">
+            <div class="input-box">
+                <span>Full name</span>
+                <input type="text" id="name" name="name" required>
+    
+            </div>
+    
+            <div class="input-box">
+                <span>Your Email</span>
+                <input type="email" id="email" name="email" required>
+    
+            </div>
+    
+            <div class="input-box">
+                <span>Your Phone</span>
+                <input type="tel" id="phone" name="phone" required>
+    
+            </div>
+    
+            <div class="input-box">
+                <span>Your Message</span>
+                <input type="message" id="message" name="message" required>
+            </div>
+            <div class="btn2">
+            <button class="btn2" type="submit">Submit</button>
+        </div>
+        </form>
+    
+        
+        <footer class="footer">
+
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-discord"></i></a>
+                <a href="https://www.instagram.com/yana_yx.nx?igsh=MWsyOXRyY3ExN3dqbQ==" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="https://www.facebook.com/danielanicole.tarrayo.3?mibextid=ZbWKwL" target="_blank"><i class="bx bxl-facebook"></i></a>
+            </div>
+    
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+    
+            <p class="copyright">
+                Tarrayo | All rights Reserved
+            </p>
+    
+        </footer>
+    </section>
+
+   
+
     <script src="script.js"></script>
 </body>
+
 </html>
